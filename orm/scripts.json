@@ -1,0 +1,4 @@
+{
+    "dbm:add": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:generate -d ../orm/ormconfig.migration.ts",
+    "dbm:run": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:run -d ../orm/ormconfig.migration.ts"
+}
