@@ -1,4 +1,8 @@
 {
-    "dbm:add": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:generate -d ../orm/ormconfig.migration.ts",
-    "dbm:run": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:run -d ../orm/ormconfig.migration.ts"
+    "dbm:gen": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:generate -d ../src/orm/ormconfig.migration.ts",
+    "dbm:run": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:run -d ../src/orm/ormconfig.migration.ts",
+    "dbm:revert": "cd migrations && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:revert -d ../src/orm/ormconfig.migration.ts",
+    "dbs:create": "cd seeds && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:create",
+    "dbs:run": "cd seeds && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:run -d ../src/orm/ormconfig.seed.ts",
+    "dbs:revert": "cd seeds && ts-node -r tsconfig-paths/register ../node_modules/typeorm/cli.js migration:revert -d ../src/orm/ormconfig.seed.ts"
 }
